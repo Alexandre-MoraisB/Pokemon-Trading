@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import {NextUIProvider} from "@nextui-org/react"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Pokemon Trading Guide',
-  description: 'Projeto para determinar trocas justas ou injustas',
+  title: 'Pokemon Trading',
+  description: 'Projeto para avaliar trocas de pokemon',
 }
 
 export default function RootLayout({

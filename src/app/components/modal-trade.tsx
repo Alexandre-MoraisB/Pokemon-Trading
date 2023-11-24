@@ -20,15 +20,15 @@ export default function ModalTrade({userPokemons, tradePokemons, setShowModal}: 
                 O limite de pokémons que podem ser ofertados, para cada lado, é 6.
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                O valor experiência de seus pokémons em total é de: {userPokemons.reduce((a,v) =>  a = a + v.base_experience , 0 )}
+                O valor experiência de seus pokémons em total é de: {userPokemons.reduce((a: any, v: { base_experience: any }) =>  a = a + v.base_experience , 0 )}
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                O valor experiência dos pokémons a serem rebidos é de: {tradePokemons.reduce((a,v) =>  a = a + v.base_experience , 0 )}
+                O valor experiência dos pokémons a serem rebidos é de: {tradePokemons.reduce((a: any, v: { base_experience: any }) =>  a = a + v.base_experience , 0 )}
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                A diferença de pontos entre os pokémons é de: {Math.abs(tradePokemons.reduce((a,v) =>  a = a + v.base_experience , 0 ) - userPokemons.reduce((a,v) =>  a = a + v.base_experience , 0 ))}
+                A diferença de pontos entre os pokémons é de: {Math.abs(tradePokemons.reduce((a: any, v: { base_experience: any }) =>  a = a + v.base_experience , 0 ) - userPokemons.reduce((a: any, v: { base_experience: any }) =>  a = a + v.base_experience , 0 ))}
               </p>
-              {Math.abs(tradePokemons.reduce((a,v) =>  a = a + v.base_experience , 0 ) - userPokemons.reduce((a,v) =>  a = a + v.base_experience , 0 )) >= 50 ?
+              {Math.abs(tradePokemons.reduce((a: any, v: { base_experience: any }) =>  a = a + v.base_experience , 0 ) - userPokemons.reduce((a: any, v: { base_experience: any }) =>  a = a + v.base_experience , 0 )) >= 50 ?
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                   A troca ofertada é injusta.
                 </p>

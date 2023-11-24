@@ -174,7 +174,7 @@ export default function Home(): JSX.Element {
         </div>
       </div>
       {showModal &&
-        <div id="default-modal" tabindex="-1" aria-hidden="true" className="overflow-y-auto overflow-x-hidden ml-[33%] mt-[10%] fixed z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div id="default-modal" aria-hidden="true" className="overflow-y-auto overflow-x-hidden ml-[33%] mt-[10%] fixed z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
           <div className="relative p-4 w-full max-w-2xl max-h-full">
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
